@@ -1,0 +1,49 @@
+.category__btns {
+    display: grid;
+    gap: 20px;
+    padding: 0 30px 20px;
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .btns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+
+        .link {
+            width: 100%;
+            padding: 15px;
+            background-color: white;
+            font-family: inherit;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: linear 0.1s;
+            border: 1px solid #ffffff;
+        }
+
+        .link:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 1px solid #4e4e4e;
+        }
+
+        .link:active {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+
+}
+
+@media (max-width: 570.60px) {
+    .category__btns {
+        .title {
+            font-size: 20px;
+        }
+    }
+
+}
