@@ -1,0 +1,120 @@
+.title {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+
+    .quote {
+        background-color: white;
+        border-radius: 10px;
+        transition: linear 0.2s;
+        max-width: 100%;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+
+        .inner__container {
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+
+            .warning {
+                font-size: 32px;
+                text-align: center;
+            }
+
+
+            .content {
+                line-height: 1.5;
+                font-size: 22px;
+            }
+
+            .author {
+                color: grey;
+            }
+
+            .parameters {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                gap: 20px;
+
+                .btn {
+                    max-width: 80px;
+                    padding: 8px;
+                    cursor: pointer;
+                    background: none;
+                }
+
+                .link {
+                    color: rgb(0, 0, 255);
+                    transition: linear 0.1s;
+                }
+
+                .link:hover {
+                    color: rgb(0, 0, 255, 0.4);
+                }
+
+                .link:active {
+                    color: rgb(0, 0, 255, 0.7);
+                }
+            }
+
+        }
+
+    }
+
+    .quote:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 570.60px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .quotes {
+        .quote {
+            .inner__container {
+
+                .content,
+                .warning,
+                .author,
+                .tags {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400.60px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .quotes {
+        .quote {
+            .inner__container {
+
+                .content,
+                .warning,
+                .author,
+                .tags {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
